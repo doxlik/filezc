@@ -1,5 +1,13 @@
 App to benchmark io_uring (splice) vs epoll (sendfile) zero-copy file transfer.
 
+Please replace in pom you linux version in this part
+
+```
+        <os.detected.name>linux</os.detected.name>
+        <os.detected.arch>aarch_64</os.detected.arch>
+        <os.detected.classifier>linux-aarch_64</os.detected.classifier>
+```
+
 To enable epoll use 
 ```
         <dependency>
